@@ -50,9 +50,9 @@ class _PromoState extends State<Promo> {
               children: [
                 TextButton(
                   onPressed: () {
-                    setState(() {
-                      Promo();
-                    });
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => Promo() 
+                    ));
                   },
                   child: const Text(
                     "Promo",
@@ -61,9 +61,9 @@ class _PromoState extends State<Promo> {
                 ),
                 TextButton(
                   onPressed: () {
-                    setState(() {
-                       PromoSaya();
-                    });
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => PromoSaya()
+                    ));
                   },
                   child: const Text(
                     "Promo Saya",

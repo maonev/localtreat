@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:local_treat/cart.dart';
 import 'package:local_treat/dashboardToKota.dart';
 import 'package:local_treat/promo.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -114,9 +115,9 @@ class _DashboardState extends State<Dashboard> {
             padding: const EdgeInsets.only(top: 15, right: 14),
             child: IconButton(
               onPressed: (){
-                setState(() {
-                  // fungsi keranjang
-                });
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => CartPage()
+                ));
               }, 
               icon: Image.asset('assets/icons/Cart.png')
             ),

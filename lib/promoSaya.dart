@@ -43,7 +43,9 @@ class PromoSaya extends StatelessWidget {
               children: [
                 TextButton(
                   onPressed: () {
-                    Promo();
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => Promo() 
+                    ));
                   },
                   child: const Text(
                     "Promo",
@@ -52,7 +54,9 @@ class PromoSaya extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    PromoSaya();
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => PromoSaya()
+                    ));
                   },
                   child: const Text(
                     "Promo Saya",
